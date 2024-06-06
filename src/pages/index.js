@@ -1,6 +1,7 @@
 // Step 1: Import React
 import * as React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
+import { Link } from 'gatsby'
 
 
 // Step 2: Define your component
@@ -11,7 +12,7 @@ const IndexPage = () => {
       <header className='flex flex-row space-x-4 absolute right-0 px-4'>
               <div className='pt-2 font-light'>Gmail</div>
               <div className='pt-2 font-light'>Images</div>
-              <div className='w-24 h-10 rounded-md bg-blue-500 text-white text-center py-2'>Sign in</div>
+              <Link to='/signin' className='w-24 h-10 rounded-md bg-blue-500 text-white text-center py-2'>Sign in</Link>
             </header>
             <section className='flex flex-col space-y-8 my-36 mx-auto justify-center items-center'>
               <div>
@@ -34,7 +35,7 @@ const IndexPage = () => {
             <footer className='flex flex-col bg-gray-100'>
               <div className='px-8 py-4'>Ghana</div>
               <div className='border w-full h-0.5 border-0.5 bg-gray-400'></div>
-              <div className='px-8 py-4 flex flex-row justify-between'>
+              <div className='px-8 py-2 flex flex-row justify-between'>
                 <div className='flex flex-row space-x-4'>
                 <div>About</div>
                 <div>Advertising</div>
